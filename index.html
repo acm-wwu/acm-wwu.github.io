@@ -26,95 +26,122 @@
     </script>
 </head>
 
-<body style="font-family:Montserrat, sans-serif;font-weight:normal;">
+<body>
 
-    <!-- Navigation -->
-    <div>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-            <div class="container" style="margin-left:0px; max-width: 100%;"><a class="navbar-brand" href="#"><span style="color: #000080">WWU</span> ACM</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#services">What We Do</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#events">Events</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="officers.html">Officers</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#contacts">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <nav>
+        <a href="">What we do</a>
+        <a href="">Events</a>
+        <a href="">Past Events</a>
+        <a href="">Our Board</a>
+        <a href="">Contact</a>
+    </nav>
 
-    <!--Landing Page Background -->
-    <section class="d-flex" id="page-top" style="background-image:url(img/hikingbirdshot.jpg);height:90vh;background-size:cover;background-position:center;background-repeat:no-repeat;">
-        <div style="width:100%; height:100%; background-color: rgba(0,0,0, .4); z-index:1;"></div>
-        <div class="row d-inline" style="width:100%; max-width:100%; word-wrap: break; margin-top: 7.5%; z-index: 10; position:absolute; left:0px;">
-            <div class="col-12">
-                <h1>Assocation for Computing Machinery @ WWU</h1>
+    <header>
+
+        <div class="header-content">
+            <h1><span id="header-acm">ACM</span> <small id="header-x">x</small> <span id="header-wwu">WWU</span></h1>
+            <p>Lorem ipsum bla bla bla we can put some header text or a mission statement or literally whatever. This is just some sample text that will span multiple lines, hopefully. </p>
+        </div>
+    </header>
+
+    <section class="what-we-do">
+
+        <div class="what-we-do-heading">
+            <h3>What we do</h3>
+        </div>
+
+        <div class="wrapper-three">
+            <div class="guest-lectures">
+                <i class="fas fa-graduation-cap"></i>
+                <h4>Guest Lectures</h4>
+                <p>We invite speakers from tech companies to talk to you about the latest technologies, and provide career opportunities.</p>
             </div>
-            <div class="col-12">
-                <p class="lower">Come learn with us.</p>
+            <div class="building-community">
+                <i class="fas fa-heart"></i>
+                <h4>Building Community</h4>
+                <p>We can connect you with current CS students, professors, and our Alumnus from companies such as Microsoft, Amazon, and many more.</p>
+            </div>
+
+            <div class="industry-connections">
+                <i class="fas fa-terminal"></i>
+                <h4>Industry Connections</h4>
+                <p>We invite speakers from local industry to discuss the problems they're working on and how you could play a role in solving them.</p>
             </div>
         </div>
+
     </section>
-    
-   <!-- What We Do -->
-    <section id="services">
-        <div class="container service-title">
-            <h1 data-aos="fade-down" data-aos-duration="500" data-aos-once="true">What We Do</h1>
-        </div>
-        <div class="container service-items">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 item" data-aos="fade-right" data-aos-duration="550"><i class="fa fa-graduation-cap"></i>
-                    <h2>Guest Lectures</h2>
-                    <p><br>We invite speakers from industry and academia to teach topics often overlooked in typical computer science coursework.<br><br></p>
-                </div>
-                <div class="col-sm-12 col-md-4 item" data-aos="fade-right" data-aos-duration="600"><i class="fa fa-heart"></i>
-                    <h2>Building Community</h2>
-                    <p><br>We aim to foster an inclusive and accepting community for people of all identities through collaborative events with other WWU CS clubs.<br><br></p>
-                </div>
-                <div class="col-sm-12 col-md-4 item" data-aos="fade-right" data-aos-duration="650"><i class="fa fa-terminal"></i>
-                    <h2>Industry Connections</h2>
-                    <p><br>We invite speakers from local industry to discuss the problems they're working on and how you could play a role in solving them.<br><br></p>
-                </div>
-            </div>
+
+    <section class="quote">
+
+        <img src="img/students.jpg" alt="Students studying together" height=35% width=35%>
+        <div class="quote-text">
+            <p> "Possibly insert a block quote, or have another opportunity to espouse our mission statement here. This is really just to space out the content leading up to Events" <br> - Some Random Dude</p>
         </div>
     </section>
 
-    <!-- Upcoming Events -->
-    <section id="events" style="background-color:#0066cc; padding: 25px;">
-        <div class="container">
-            <div style="color:white;">
-                <h1 data-aos="fade-down" data-aos-duration="500" data-aos-once="true">Upcoming Events</h1>
-		<!--
-                <h3><br><strong>WWU Hackathon 2019</strong><br><br></h3>
-                <p>Date: February 16th-17th </p>
-                <p>Food and Drinks will be provided!</p>
-                <p>The hackathon is a FREE 24-hour coding events where you will work in a team to complete a project that will be presented and evaluated after the 24-hour session. Winners will be selected and rewarded prizes!</p>
-		<a href="https://docs.google.com/forms/d/e/1FAIpQLSde5wCbbXOiHEBNXlQAhMKNAzLZWOnv9m5mvzQFNlsxicVIuA/viewform" style="color:orange">Sign Up Form & More Info</a>
-		-->
-            </div>
-            <div class="responsive-iframe-container d-none d-md-block">
-<iframe src="https://calendar.google.com/calendar/b/5/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffccff&amp;src=acm.wwu%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-    </section>
-    
-    <!-- footer -->
-    <footer class="d-block footer-dark" id="contacts" style="background-color:rgb(64,71,78);">
-            <div class="container">
-                <div class="row">
-					<div class="col-12">
-						<br>
-						<h2>Contact Us</h2>
-						<div class="d-flex">
-                            <div class="col-auto footer-icon"><a href="mailto:acm.wwu@gmail.com" title="Email"><i class="fa fa-envelope"></i></a></div>
-                            <div class="col-auto footer-icon"><a href="https://www.facebook.com/groups/wwuacm/" title="Facebook"><i class="fab fa-facebook-f"></i></a></div>
-                            <div class="col-auto footer-icon"><a href="https://twitter.com/acmatwwu?lang=en" title="Twitter"><i class="fab fa-twitter"></i></a></div>
-			    <div class="col-auto footer-icon"><a href="https://discord.gg/AWC7xWU" title="Discord"><i class="fab fa-discord"></i></a>
-                        </div>
-						<a href="https://disability.wwu.edu/" target="_blank">WWU DISABILITY AND SERVICES</a>
+    <section class="events">
+        <h2>EVENTS</h2>
+        <p class="events-blurb">We can have a blurb here that talks about how our events work in general, or what types of events we host, frequency, etc. Something something bring in fancy people, forster sense of community, idk?</p>
+
+        <div class="wrapper-two">
+            <div class="acm-events">
+                <h3>ACM Events</h3>
+                <hr>
+                <div class="event">
+                    <h4>Plankton Ted Talk</h4>
+                    <p>See how eveteran programmer Mr. Plankton plans on stealing the krabby patty formula for real during Q2 2020.</p>
+                    <p>Wednesday, April 1, 2020 - 12:00 AM to 1:00 AM</p>
+
+                </div>
+
+                <div class="event">
+                    <h4>Elon Musk Networking</h4>
+                    <p>Come by and smoke a joint with everyone's favorite chaotic neutral billionaire. Will feature a fight to the death over a Tesla roadster. Flamethrowers will be provided.</p>
+                    <p>Thursday, Novembuary 40, 2020 - 2:00 AM to 13:00 AM</p>
                 </div>
             </div>
+
+            <div class="department-events">
+                <h3>Department Events</h3>
+                <hr>
+                <div class="event">
+                    <h4>The Bezos Ball</h4>
+                    <p>Watch the world's first legal gladiator bloodsport event on the Old Main Lawn, where Jeff Bezos' orphan slaves will maul each other to death for a bit of daddy's love.</p>
+                    <p>Thursday, January 1, 2048 - 12:00 AM to 1:00 AM</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="past-events">
+        <img src="img/more-students.jpg" alt="Students studying together" height=35% width=35%>
+        <div class="past-events-wrapper">
+            <h2>PAST EVENTS</h2>
+            <p>From TED talks by billionaires to charity events, we've done it all at ACM. You can view our gallery below for pictures and lists of our past events.</p>
+            <a href="" class="button-light">View Gallery</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <h3>CONTACT US</h3>
+        <p>Got any questions? Meeting suggestions? Event requests? Or just want to hang out? Hit us up at <a href="mailto:"">iforgotouremail@acm.wwu.edu</a> or stalk us on our social media links below!</p>
+
+        <div class="social-wrapper">
+            <a href="https://www.facebook.com/groups/wwuacm/" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/acmatwwu?lang=en" title="Twitter">
+
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://discord.gg/AWC7xWU" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://disability.wwu.edu/" target="_blank"><h5>WWU DISABILITY AND SERVICES</h5> </a>
+        </div>
+
     </footer>
     
     <script type="text/javascript">
@@ -123,6 +150,6 @@
     });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-</body>
+</body
 
 </html>
