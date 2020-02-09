@@ -27,7 +27,7 @@ nav a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5em;
 }
 
 nav { 
@@ -82,6 +82,30 @@ header {
   line-height: 3em;
 }
 
+.button-dark { 
+  background-color: var(--wwu-dark-blue);
+  color: white !important;
+  padding: 10px 50px;
+  text-align: center;
+  font-size: 1.25em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.button-dark a { 
+  text-decoration: none;
+  color: white;
+}
+
+.button-dark a:hover {
+  color: white;
+}
+
+.header-content a:hover { 
+  text-decoration: none;
+}
+
 /* WHAT WE DO */
 
 .what-we-do-heading h3 { 
@@ -131,12 +155,26 @@ header {
   flex-direction: row-reverse;
 }
 
+.quote-text { 
+  position:relative;
+}
+
 .quote p { 
   padding: 100px;
   padding-top:150px;
+  padding-left: 150px;
   color: white;
   font-size: 1.75em;
   text-align: center;
+}
+
+.quote-text p::before { 
+  content: "\"";
+  position: absolute;
+  top: -10px;
+  left: 70px;
+  font-size: 10em;
+  color: var(--wwu-blue);
 }
 
 /* EVENTS */
@@ -220,12 +258,22 @@ hr {
   color: white;
   text-align: center;
   padding: 10px 50px;
+  font-size: 1.25em;
 }
 
 .past-events-wrapper { 
   padding-top: 50px;
   padding-left: 30px;
   padding-right: 150px;
+}
+
+.past-events a { 
+  text-decoration: none;
+}
+
+.past-events a:hover { 
+  text-decoration: none;
+  color: white;
 }
 
 /* FOOTER */
@@ -271,4 +319,88 @@ footer h5 {
   flex-direction: row;
 }
 
+/* Fix weird shit */
+@media only screen and (max-width: 1233px) { 
 
+  .quote { 
+    display: none;
+  }
+
+  .past-events { 
+    display: none;
+  }
+
+  .wrapper-three > div { 
+    padding: 0px 30px;
+  }
+
+  .wrapper-two { 
+    display: block;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 800px){
+  nav { 
+    display: none;
+  }
+
+  .header-content h1 { 
+    font-size: 5.75em;
+    padding-top: 50px;
+  }
+
+  .header-content p { 
+    font-size: 1em;
+  }
+
+  .wrapper-three > div { 
+    padding: 0px 69px; /* nice */
+  }
+
+  .button-dark { 
+    font-size: 1em;
+    padding: 10px 30px;
+    width: 170px;
+  }
+
+  .quote { 
+    display: none;
+  }
+
+  .wrapper-three { 
+    display: block;
+  }
+
+  .wrapper-two { 
+    display: block;
+  }
+
+  .events h2 { 
+    font-size: 3.75em;
+  }
+
+  .past-events { 
+    display: block;
+  }
+
+  .past-events-wrapper { 
+    padding: 50px;
+  }
+
+  .past-events-wrapper p { 
+    font-size: 1.25em;
+    margin-bottom: 35px;
+    margin-top: 25px;
+  }
+
+  .past-events img { 
+    width: 100%;
+  }
+  .social-wrapper { 
+    display: block;
+  }
+
+}

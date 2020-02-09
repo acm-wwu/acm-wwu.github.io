@@ -29,24 +29,27 @@
 <body>
 
     <nav>
-        <a href="">What we do</a>
-        <a href="">Events</a>
-        <a href="">Past Events</a>
+        <a href="#contact">Contact</a>
         <a href="">Our Board</a>
-        <a href="">Contact</a>
+        <a href="#past-events">Past Events</a>
+        <a href="#events">Events</a>
+        <a href="#what-we-do">What we do</a>
     </nav>
+    
 
     <header>
-
         <div class="header-content">
             <h1><span id="header-acm">ACM</span> <small id="header-x">x</small> <span id="header-wwu">WWU</span></h1>
+            <hr>
             <p>Lorem ipsum bla bla bla we can put some header text or a mission statement or literally whatever. This is just some sample text that will span multiple lines, hopefully. </p>
+            <br>
+            <div class="button-dark"><a href="#events" >Our Events</a></div >
         </div>
     </header>
 
     <section class="what-we-do">
 
-        <div class="what-we-do-heading">
+        <div class="what-we-do-heading" id="what-we-do">
             <h3>What we do</h3>
         </div>
 
@@ -71,15 +74,15 @@
 
     </section>
 
-    <section class="quote">
+    <section class="quote" id="quote">
 
-        <img src="img/students.jpg" alt="Students studying together" height=35% width=35%>
+        <img src="img/students.jpg" alt="Students studying together" height=435px width=655px>
         <div class="quote-text">
-            <p> "Possibly insert a block quote, or have another opportunity to espouse our mission statement here. This is really just to space out the content leading up to Events" <br> - Some Random Dude</p>
+            <p> "Possibly insert a block quote, or have another opportunity to espouse our mission statement here. This is really just to space out the content leading up to Events" <br> <em> - Some Random Dude</em></p>
         </div>
     </section>
 
-    <section class="events">
+    <section class="events" id="events">
         <h2>EVENTS</h2>
         <p class="events-blurb">We can have a blurb here that talks about how our events work in general, or what types of events we host, frequency, etc. Something something bring in fancy people, forster sense of community, idk?</p>
 
@@ -91,7 +94,6 @@
                     <h4>Plankton Ted Talk</h4>
                     <p>See how eveteran programmer Mr. Plankton plans on stealing the krabby patty formula for real during Q2 2020.</p>
                     <p>Wednesday, April 1, 2020 - 12:00 AM to 1:00 AM</p>
-
                 </div>
 
                 <div class="event">
@@ -109,12 +111,11 @@
                     <p>Watch the world's first legal gladiator bloodsport event on the Old Main Lawn, where Jeff Bezos' orphan slaves will maul each other to death for a bit of daddy's love.</p>
                     <p>Thursday, January 1, 2048 - 12:00 AM to 1:00 AM</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="past-events">
+    <section class="past-events" id="past-events">
         <img src="img/more-students.jpg" alt="Students studying together" height=35% width=35%>
         <div class="past-events-wrapper">
             <h2>PAST EVENTS</h2>
@@ -123,8 +124,7 @@
         </div>
     </section>
 
-
-    <footer>
+    <footer id="contact">
         <h3>CONTACT US</h3>
         <p>Got any questions? Meeting suggestions? Event requests? Or just want to hang out? Hit us up at <a href="mailto:"">iforgotouremail@acm.wwu.edu</a> or stalk us on our social media links below!</p>
 
@@ -141,8 +141,7 @@
             </a>
             <a href="https://disability.wwu.edu/" target="_blank"><h5>WWU DISABILITY AND SERVICES</h5> </a>
         </div>
-
-    </footer>
+    </footer id="contact">
     
     <script type="text/javascript">
     $(document).ready(function(){
