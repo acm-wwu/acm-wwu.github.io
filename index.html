@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/630e4657ce.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118141915-1"></script>
@@ -30,7 +31,7 @@
 
     <nav>
         <a href="#contact">Contact</a>
-        <a href="">Our Board</a>
+        <a href="#board">Our Board</a>
         <a href="#past-events">Past Events</a>
         <a href="#events">Events</a>
         <a href="#what-we-do">What we do</a>
@@ -39,11 +40,11 @@
 
     <header>
         <div class="header-content">
-            <h1><span id="header-acm">ACM</span> <small id="header-x">x</small> <span id="header-wwu">WWU</span></h1>
+            <h1><span id="header-acm">ACM</span> <small id="header-x">@</small> <span id="header-wwu">WWU</span></h1>
             <hr>
             <p>Lorem ipsum bla bla bla we can put some header text or a mission statement or literally whatever. This is just some sample text that will span multiple lines, hopefully. </p>
             <br>
-            <div class="button-dark"><a href="#events" >Our Events</a></div >
+            <a class="button-dark" href="#events" >Our Events</a>
         </div>
     </header>
 
@@ -54,18 +55,18 @@
         </div>
 
         <div class="wrapper-three">
-            <div class="guest-lectures">
+            <div data-aos="fade-right" data-aos-duration="750" class="guest-lectures">
                 <i class="fas fa-graduation-cap"></i>
                 <h4>Guest Lectures</h4>
                 <p>We invite speakers from tech companies to talk to you about the latest technologies, and provide career opportunities.</p>
             </div>
-            <div class="building-community">
+            <div data-aos="fade-right" data-aos-duration="750" class="building-community">
                 <i class="fas fa-heart"></i>
                 <h4>Building Community</h4>
                 <p>We can connect you with current CS students, professors, and our Alumnus from companies such as Microsoft, Amazon, and many more.</p>
             </div>
 
-            <div class="industry-connections">
+            <div data-aos="fade-right" data-aos-duration="750" class="industry-connections">
                 <i class="fas fa-terminal"></i>
                 <h4>Industry Connections</h4>
                 <p>We invite speakers from local industry to discuss the problems they're working on and how you could play a role in solving them.</p>
@@ -78,7 +79,7 @@
 
         <img src="img/students.jpg" alt="Students studying together" height=435px width=655px>
         <div class="quote-text">
-            <p> "Possibly insert a block quote, or have another opportunity to espouse our mission statement here. This is really just to space out the content leading up to Events" <br> <em> - Some Random Dude</em></p>
+            <p data-aos="fade-up" data-aos-duration="750"> Possibly insert a block quote, or have another opportunity to espouse our mission statement here. This is really just to space out the content leading up to Events <br> <em> - Some Random Dude</em></p>
         </div>
     </section>
 
@@ -87,7 +88,7 @@
         <p class="events-blurb">We can have a blurb here that talks about how our events work in general, or what types of events we host, frequency, etc. Something something bring in fancy people, forster sense of community, idk?</p>
 
         <div class="wrapper-two">
-            <div class="acm-events">
+            <div data-aos="fade-right" data-aos-duration="750" class="acm-events">
                 <h3>ACM Events</h3>
                 <hr>
                 <div class="event">
@@ -103,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="department-events">
+            <div data-aos="fade-left" data-aos-duration="750" class="department-events">
                 <h3>Department Events</h3>
                 <hr>
                 <div class="event">
@@ -120,15 +121,40 @@
         <div class="past-events-wrapper">
             <h2>PAST EVENTS</h2>
             <p>From TED talks by billionaires to charity events, we've done it all at ACM. You can view our gallery below for pictures and lists of our past events.</p>
-            <a href="" class="button-light">View Gallery</a>
+            <a href="gallery.html" class="button-light">View Gallery</a>
+        </div>
+    </section>
+
+    <section class="board" id="board">
+        <h3> MEET OUR OFFICERS </h3>
+        <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="750" class="board-member">
+            <img src="img/more-students.jpg" alt="" height=300px width=300px>
+            <div class="board-bio">
+                <h1>Chad Chaddington</h1>
+                <p>The local chad of the ACM department, Mr. Chaddington is an exquisite hunter, hitman, and blacksmith who also does consulting for small local tech firms such as Google or Facebook. In his free time, Chad enjoys knitting and murdering people. Chad is the best board member out of everyone in ACM</p>
+            </div>
+        </div>
+        <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="750" class="board-member">
+            <img src="img/more-students.jpg" alt="" height=300px width=300px>
+            <div class="board-bio">
+                <h1>Barry Bellingham</h1>
+                <p>Barry Bellingham is like, totally chill. He loves longboarding and hiking and the Office, but vehemently opposes the idea of footwear - he believes that feet should exist freely outside of the confines of cloth and leather. He plays the guitar (but only knows creep by radiohead) and is always down to smoke you out of the arb. His favorite part of his personality is his man-bun and beard. Barry is the best board member out of everyone in ACM</p>
+            </div>
+        </div>
+        <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="750" class="board-member">
+            <img src="img/more-students.jpg" alt="" height=300px width=300px>
+            <div class="board-bio">
+                <h1>Dick Barrington Idiot</h1>
+                <p>Regrettably named, Dick Barrington Idiot is a local super senior who is only in ACM so he can use it as a front for his luxury methamphetamine business. He is a hobbyist lepidopterist and also an avid collector of blow darts. He is the proud owner of an ungodly RV/van mashup and firmly believes that all drugs should be legalized. Dick is the best board member out of everyone in ACM</p>
+            </div>
         </div>
     </section>
 
     <footer id="contact">
-        <h3>CONTACT US</h3>
-        <p>Got any questions? Meeting suggestions? Event requests? Or just want to hang out? Hit us up at <a href="mailto:"">iforgotouremail@acm.wwu.edu</a> or stalk us on our social media links below!</p>
+        <h3 data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">CONTACT US</h3>
+        <p data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">Got any questions? Meeting suggestions? Event requests? Or just want to hang out? Hit us up at <a href="mailto:acm.wwu@gmail.com">acm.wwu@gmail.com</a> or stalk us on our social media links below!</p>
 
-        <div class="social-wrapper">
+        <div  data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" class="social-wrapper">
             <a href="https://www.facebook.com/groups/wwuacm/" title="Facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
@@ -141,8 +167,19 @@
             </a>
             <a href="https://disability.wwu.edu/" target="_blank"><h5>WWU DISABILITY AND SERVICES</h5> </a>
         </div>
-    </footer id="contact">
+    </footer>
     
+    <script src="js/zenscroll-min.js"></script>
+    <script type="text/javascript">
+        var load = gsap.timeline();
+
+        load.from("nav a", {duration: .75, opacity: 0, y:10, stagger: -0.1,ease:Expo.easeInOut})
+            .from(".header-content h1", {duration: 1, opacity: 0, y:30,ease:Expo.easeInOut})
+            .from(".header-content hr", {duration: 1, width:0, ease:Expo.easeInOut})
+            .from(".header-content p", {duration: .5, opacity: 0, y:30, ease:Expo.easeInOut},"-=0.5")
+            .from(".button-dark", {duration: 1, opacity: 0, ease:Expo.easeInOut}, "-=0.5" );
+
+    </script>
     <script type="text/javascript">
     $(document).ready(function(){
             AOS.init({ disable: 'mobile' });

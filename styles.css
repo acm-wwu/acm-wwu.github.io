@@ -2,7 +2,7 @@
 
 /* CSS VARS */
 :root { 
-  /* Colors follow WWU brand guidelines - for reference search up wwu design guidelines */
+  /* Colors should follow WWU brand guidelines - for reference search up wwu design guidelines */
   --wwu-blue: #007ac8;
   --wwu-dark-blue: #003f87;
   --wwu-light-gray: #e3e7e9;
@@ -28,6 +28,13 @@ nav a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1.5em;
+}
+
+nav a:hover { 
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    text-decoration: none;
+    color: var(--wwu-blue);
 }
 
 nav { 
@@ -83,6 +90,7 @@ header {
 }
 
 .button-dark { 
+  display: block;
   background-color: var(--wwu-dark-blue);
   color: white !important;
   padding: 10px 50px;
@@ -172,7 +180,7 @@ header {
   content: "\"";
   position: absolute;
   top: -10px;
-  left: 70px;
+  left: 35px;
   font-size: 10em;
   color: var(--wwu-blue);
 }
@@ -276,6 +284,33 @@ hr {
   color: white;
 }
 
+/* BOARD */
+
+.board { 
+    background-color: var(--wwu-light-gray);
+    padding: 100px;
+}
+
+.board h3 { 
+    color: var(--wwu-blue);
+    font-weight: 900;
+    font-size: 5.5em;
+}
+
+.board-member { 
+    display: flex;
+    padding: 50px;
+}
+
+.board-bio { 
+    padding: 50px;
+}
+
+.board-bio h1 { 
+    font-weight: 900;
+    color: var(--wwu-blue);
+}
+
 /* FOOTER */
 
 footer { 
@@ -353,7 +388,7 @@ footer h5 {
   }
 
   .header-content p { 
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .wrapper-three > div { 
@@ -367,7 +402,22 @@ footer h5 {
   }
 
   .quote { 
-    display: none;
+      display: block;
+  }
+
+  .quote p { 
+      padding: 50px;
+      font-size: 1.5em;
+      margin: 0;
+  }
+  
+  .quote p:before { 
+      display: none;
+  }
+
+  .quote img { 
+      width: 100%;
+      height: auto;
   }
 
   .wrapper-three { 
@@ -375,11 +425,29 @@ footer h5 {
   }
 
   .wrapper-two { 
-    display: block;
+      padding: 0;
+  }
+
+  .events { 
+      padding: 50px;
+  }
+
+  .wrapper-two > div { 
+      padding-right: 0;
+  }
+
+  .events-blurb { 
+      font-size: 1.25em;
+      padding-top: 10px;
+      padding-bottom: 30px;
   }
 
   .events h2 { 
-    font-size: 3.75em;
+    font-size: 3.5em;
+  }
+
+  .events h3 { 
+      font-size: 2.5em;
   }
 
   .past-events { 
@@ -401,6 +469,47 @@ footer h5 {
   }
   .social-wrapper { 
     display: block;
+  }
+
+  .board { 
+    padding: 50px;
+  }
+
+  .board h3 { 
+      font-size: 3.5em;
+      padding-bottom: 50px;
+  }
+
+  .board-member { 
+      display: block;
+      padding: 10px 5px;
+  }
+  
+  .board-bio { 
+      padding: 50px 0px;
+  }
+
+  .board img { 
+      width: 250px;
+      height: 250px;
+  }
+
+  footer { 
+      padding: 50px;
+  }
+
+  footer p { 
+      font-size: 1.25em;
+      padding-top: 10px;
+      padding-bottom: 30px;
+  }
+
+  .fab { 
+      padding: 20px;
+  }
+
+  footer h5 { 
+      padding-left: 0;
   }
 
 }
